@@ -1,0 +1,30 @@
+#background {
+    background-image: url(../images/background.jpg);
+    height: 75vh;
+  }
+
+  @media (min-width: 992px) {
+    #background {
+      margin-top: -58.59px;
+    }
+  }
+
+  #welcometext{
+      
+      font-style:italic;
+      font-size: x-large;
+      
+  }
+
+  #propertiesbutton {
+    background-color: grey;
+    border-radius: 12px;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+  }
