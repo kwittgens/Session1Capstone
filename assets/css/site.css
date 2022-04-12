@@ -30,3 +30,9 @@
     margin: 4px 2px;
     
   }
+
+  .card-img-mine {
+    width: 5%;
+    height: 15vw;
+    object-fit: cover;
+}
