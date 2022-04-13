@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
 
             <a class="navbar-brand" href="index.html">
@@ -30,86 +30,100 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="properties.html">Our Properties</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="register.html">Register</a>
-                    </li>
+                    </li>                  
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="book.html">Book</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
                 </ul>
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex">
+                    <li class="nav-item">
+                        <a class="nav-link" href="myreservations.html">My Reservations</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>
 
+    
     <div class="container">
 
         <div class="p-2 pt-md-4 pb-md-3 mx-auto text-center">
-            <h1 class="display-4">Contact us to request a booking</h1>
+            <h1 class="display-4">Request a booking</h1>
         </div>
 
         <div class="row">
             <div class="col-md-8 offset-2">
                 <form action="book.html" method="get">
-                    <div class="row">
-                        <div class="col-md-6 mb-3 form-group">
-                            <label for="firstName">First name</label>
-                            <input type="text" class="form-control" id="firstName" placeholder="Your first name">
+                    <span class="border border-light">
+                        <div class="row">
+                            <div class="col-md-6 mb-3 form-group">
+                                <label for="firstName">First name*</label>
+                                <input type="text" class="form-control" id="firstName" placeholder="Your first name" required>
 
-                        </div>
-                        <div class="col-md-6 mb-3 form-group">
-                            <label for="lastName">Last name</label>
-                            <input type="text" class="form-control" id="lastName" placeholder="Your last name" value="">
-                        </div>
-                        <div class="mb-3 form-group">
-                            <label for="email">Email</label>
-                            <div class="input-group">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text">@</span>
+                            </div>
+                            <div class="col-md-6 mb-3 form-group">
+                                <label for="lastName">Last name*</label>
+                                <input type="text" class="form-control" id="lastName" placeholder="Your last name"
+                                    required>
+                            </div>
+                            <div class="mb-3 form-group">
+                                <label for="email">Email*</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">@</span>
+                                    </div>
+                                    <input type="email" class="form-control" id="email" placeholder="Email" required>
                                 </div>
-                                <input type="email" class="form-control" id="email" placeholder="Email">
-                            </div>
-                        </div>
-
-                        <div class="col-md-6 mb-3 form-group">
-                            <label for="phone">Phone</label>
-                            <div class="input-group">
-                                
-                                <input type="tel" class="form-control" id="phone" name="phone" placeholder="xxx-xxx-xxxx" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
-
                             </div>
 
+                            <div class="col-md-6 mb-3 form-group">
+                                <label for="phone">Phone</label>
+                                <div class="input-group">
+
+                                    <input type="tel" class="form-control" id="phone" name="phone"
+                                        placeholder="xxx-xxx-xxxx" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+
+                                </div>
+
+                            </div>
+                            <!--To do:  align checkbox to center of row-->
+
+                            <div class="col-md-6 mb-3 form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="mobile">
+                                <label class="form-check-label" for="mobile">Mobile?</label>
+                            </div>
+
+                            <div class="col-md-6 mb-3 form-group">
+                                <label for="dateFrom">Arrival*</label>
+                                <input type="text" class="form-control" id="dateFrom" placeholder="mm/dd/yyyy"
+                                    pattern="[a-z]{2}/[0-9]{2}/[0-9]{4}" required>
+
+                            </div>
+                            <div class="col-md-6 mb-3 form-group">
+                                <label for="dateTo">Departure*</label>
+                                <input type="text" class="form-control" id="dateTo" placeholder="mm/dd/yyyy"
+                                    pattern="[a-z]{2}/[0-9]{2}/[0-9]{4}" required >
+                            </div>
+
+                            <div class="form-group col-md-4">
+                                <label for="property">Desired Property*</label>
+                                <select id="property" class="form-control">
+                                    <option selected>Choose...</option>
+                                    <option>1543</option>
+                                    <option>140133</option>
+                                    <option>05663</option>
+                                    <option>1601</option>
+                                    <option>2025</option>
+                                    <option>1478</option>
+
+                                </select>
+                            </div>
+
                         </div>
-                        <!--To do:  align checkbox to center of row-->                        
-
-                        <div class="col-md-6 mb-3 form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="mobile">
-                            <label class="form-check-label" for="mobile">Mobile?</label>
-                          </div>
-                        
-                        <div class="col-md-6 mb-3 form-group">
-                            <label for="dateFrom">Arrival</label>
-                            <input type="text" class="form-control" id="dateFrom" placeholder="mm/dd/yyyy" pattern="[a-z]{2}/[0-9]{2}/[0-9]{4}">
-
-                        </div>
-                        <div class="col-md-6 mb-3 form-group">
-                            <label for="dateTo">Departure</label>
-                            <input type="text" class="form-control" id="dateTo" placeholder="mm/dd/yyyy" pattern="[a-z]{2}/[0-9]{2}/[0-9]{4}">
-                        </div>
-
-                        <div class="form-group col-md-4">
-                            <label for="property">Desired Property</label>
-                            <select id="peroperty" class="form-control">
-                              <option selected>Choose...</option>
-                              <option>...</option>
-                            </select>
-                          </div>
-
-                    </div>                    
+                    </span>
 
                     <div class="col text-center">
                         <button type="submit" class="red-btn btn btn-primary">Submit</button>
@@ -118,6 +132,7 @@
                 </form>
             </div>
         </div>
+        </span>
     </div>
 
 
