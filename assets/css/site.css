@@ -8,26 +8,13 @@
     height: 75vh;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 0.5;
-    
   }
 
   #background3 {
     background-image: url(../images/background3.jpg);
     height: 75vh;
     background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; 
-    opacity: 0.2; 
-    
-  }
-
-
-  @media (min-width: 992px) {
-    #background {
-      margin-top: -58.59px;
-    }
+    background-repeat: no-repeat;      
   }
 
   #welcometext{
@@ -61,21 +48,20 @@
     vertical-align: bottom;
 }
 
-
-
 .login-form-control {
-  width:170px;
+  width: 300px;
 }
 
 .contact-text-container{
-  background-color:darkgrey;
-  width: 33%;
-  
+  background-color:whitesmoke;
+  width: 33%;  
 }
 
 .login-container{
   background-color:whitesmoke;
-  width: 40%;
+  width: 25%;
+  margin: 0px 250px;
+  -ms-transform-origin-x: 0%;
   
 }
 
