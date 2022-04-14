@@ -29,6 +29,7 @@
 
   .red-btn {
     background-color:maroon;
+    
     border-radius: 12px;
     border: none;
     color: white;
@@ -40,6 +41,11 @@
     margin: 4px 2px;
         
   }
+
+  .red-btn:hover, .red-btn:focus, .red-btn:active, .red-btn.active, .open>.dropdown-toggle.btn-primary {
+    background-color:gray
+    
+}
 
    .card-img-top {
     width: 100%;

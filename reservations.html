@@ -12,6 +12,7 @@
 </head>
 
 <body>
+     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-light ">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">
@@ -45,24 +46,28 @@
         </div>
     </nav>
 
-    <div id="background2" class="bg-image p-5 text-center rounded">
+    <div class="container">
+        <div class="p-2 pt-md-4 pb-md-3 mx-auto text-center">
+            <h1 class="display-4">Your Reservations</h1>
+        </div>
 
-    </div>
-
-    <div class="container mt-5 shadow-lg login-container rounded fixed-top top-50 start-0 translate-middle">
-
-        <div class="container" mt-5>
-            <div class="container mt-3">
-                <H3>Confirmed Reservations</H3>
-                <p>
-                    blah blah
-                </p>
-
-                <p>Contact us via <a href="mailto:info@HoodCanalVacationRentals.com">email</a></p>
+         <!-- Reserved Property Card(s) -->
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
+            <div class="col mb-4">
+                <div class="card">
+                    <img src="assets/images/image1.webp" class="card-img-top" object-fit=cover
+                        alt="3 BR from $165 a night">
+                    <div class="card-body">
+                        <h5 class="card-title">Property 1543</h5>
+                        <p class="card-text">Confirmed for 4 nights: 7/1/2022 through 7/5/2022</p>
+                        <p class="card-text">$165/night - <b>Paid in full</b></p>
+                        <p><a class="btn btn-primary" href="cancel.html" role="button">Cancel Reservation</a> </p>
+                        
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
