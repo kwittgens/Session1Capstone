@@ -3,9 +3,26 @@
     height: 75vh;
   }
 
-  
+  #background2 {
+    background-image: url(../images/background2.jpg);
+    height: 75vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+    
+  }
 
- 
+  #background3 {
+    background-image: url(../images/background3.jpg);
+    height: 75vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    opacity: 0.2; 
+    
+  }
+
 
   @media (min-width: 992px) {
     #background {
@@ -17,11 +34,8 @@
       
       font-style:italic;
       font-size: x-large;
-      text-align: center;
-      
-  }
-
-  
+      text-align: center;      
+  }  
 
   .red-btn {
     background-color:maroon;
@@ -47,6 +61,21 @@
     vertical-align: bottom;
 }
 
-.short-bg {
-    height: 75vh;
+
+
+.login-form-control {
+  width:170px;
 }
+
+.contact-text-container{
+  background-color:darkgrey;
+  width: 33%;
+  
+}
+
+.login-container{
+  background-color:whitesmoke;
+  width: 40%;
+  
+}
+
