@@ -38,7 +38,7 @@
                         <a class="nav-link" href="contact.html">Contact Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="myreservations.html">My Reservations</a>
+                        <a class="nav-link" href="login.html">My Reservations</a>
                     </li>
                 </ul>
             </div>
@@ -54,7 +54,8 @@
 
         <div class="row">
             <div class="col-md-8 offset-2">
-                <form action="book.html" method="get">
+                <!--form action="book.html" method="get"-->
+                    <form action="confirmation.html" method="POST" enctype="application/x-www-form-urlencoded">
                     <span class="border border-light">
                         <div class="row">
                             <div class="col-md-6 mb-3 form-group">
@@ -81,8 +82,10 @@
                                 <label for="phone">Phone</label>
                                 <div class="input-group">
 
+                                    <!--pattern="[0-9]{3}-[0-9]{2}-[0-9]{4}"-->
+
                                     <input type="tel" class="form-control" id="phone" name="phone"
-                                        placeholder="xxx-xxx-xxxx" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+                                        placeholder="xxx-xxx-xxxx" >
 
                                 </div>
 
@@ -94,16 +97,19 @@
                                 <label class="form-check-label" for="mobile">Mobile?</label>
                             </div>
 
+                            <!--pattern="(?:19|20)[0-9]{2}-(?:(?:0[1-9]|1[0-2])-(?:0[1-9]|1[0-9]|2[0-9])|(?:(?!02)(?:0[1-9]|1[0-2])-(?:30))|(?:(?:0[13578]|1[02])-31))"-->
+
                             <div class="col-md-6 mb-3 form-group">
                                 <label for="dateFrom">Arrival*</label>
                                 <input type="text" class="form-control" id="dateFrom" placeholder="mm/dd/yyyy"
-                                    pattern="[a-z]{2}/[0-9]{2}/[0-9]{4}" required>
+                                 required>
 
                             </div>
+
                             <div class="col-md-6 mb-3 form-group">
                                 <label for="dateTo">Departure*</label>
                                 <input type="text" class="form-control" id="dateTo" placeholder="mm/dd/yyyy"
-                                    pattern="[a-z]{2}/[0-9]{2}/[0-9]{4}" required >
+                                required >
                             </div>
 
                             <div class="form-group col-md-4">
