@@ -49,18 +49,18 @@
     </div>
 
     <div class="container mt-5 shadow-lg login-container rounded fixed-top top-50 start-0 translate-middle">
-        <div class="container" mt-5>
+        <div class="container mt-5">
             <h3>Log on to view your reservations</h3>
             <div class="container mt-3">
-                <form>
+                <form action="reservations.html" method="POST" enctype="application/x-www-form-urlencoded">
                     <div class="form-group ">
                         <label for="email">Email address</label>
                         <input type="email" class="form-control login-form-control" id="email"
-                            aria-describedby="emailHelp" placeholder="Enter email">
+                            aria-describedby="emailHelp" placeholder="Enter email" required>
 
                         <label for="password">Password</label>
                         <input type="password" class="form-control login-form-control" id="password"
-                            placeholder="Password">
+                            placeholder="Password" required("text") >
                     </div>
                     <div class="container mt-5 mb-5">
                         <button type="submit" class="btn btn-primary">Log In</button>
